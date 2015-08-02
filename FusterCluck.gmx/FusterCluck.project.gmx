@@ -124,6 +124,8 @@
     <background>background\tile_grass2</background>
     <background>background\tile_wood</background>
     <background>background\tile_hay</background>
+    <background>background\tile_lightwood</background>
+    <background>background\tile_spiderweb</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\Pth_square</path>
@@ -206,6 +208,7 @@
       <object>objects\obj_new_front_center_border_left</object>
       <object>objects\obj_new_front_center_border_right</object>
       <object>objects\obj_front_center_border_top</object>
+      <object>objects\object61</object>
     </objects>
     <object>objects\obj_Friend</object>
     <object>objects\obj_PatrolPoint</object>
