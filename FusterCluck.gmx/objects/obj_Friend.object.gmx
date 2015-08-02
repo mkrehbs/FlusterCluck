@@ -135,6 +135,7 @@ if(follow){if(distance_to_point(obj_Player.x,y) &lt; 5){moving = false;}else{mov
             <kind>1</kind>
             <string>alarm[0] = 10;
 instance_create(2432,2560+10,obj_Hole);
+with(obj_Fencyfence){instance_destroy();}
 obj_Text.character = 1;
 obj_Text.draw = 1;
 obj_Text.line = 0;

@@ -70,7 +70,7 @@ transition = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_end();
+            <string>game_restart();
 </string>
           </argument>
         </arguments>

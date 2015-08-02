@@ -1,1 +1,3 @@
-room_goto_next();
+game_restart();
+
+//room_goto_next();

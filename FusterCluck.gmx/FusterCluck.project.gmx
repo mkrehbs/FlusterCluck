@@ -192,6 +192,7 @@
       <object>objects\obj_fenceRight</object>
       <object>objects\obj_fenceLeft</object>
       <object>objects\obj_fenceMid</object>
+      <object>objects\obj_IDKFENCE</object>
       <object>objects\obj_FenceBottomRight</object>
       <object>objects\obj_FenceBottomLeft</object>
       <object>objects\obj__wood_front_center_border_top</object>
@@ -212,7 +213,7 @@
       <object>objects\obj_new_front_center_border_left</object>
       <object>objects\obj_new_front_center_border_right</object>
       <object>objects\obj_front_center_border_top</object>
-      <object>objects\object61</object>
+      <object>objects\obj_Fencyfence</object>
       <object>objects\obj_Cage</object>
     </objects>
     <object>objects\obj_Friend</object>
