@@ -70,7 +70,7 @@ rating[4] = "SNEAK HERO";
 rating[5] = "MAJOR DOOF";
 
 //text box
-draw = true;
+draw = false;
 line = 0;
 t = 0;
 padding = 8;
