@@ -347,7 +347,7 @@ if (facing == 'D') {
             <kind>1</kind>
             <string>///Matt
 
-if(hp &lt; 1){scr_GameOver();}
+if(hp &lt; 1){scr_GameOver(); alert_raise = 0; dog_kill = 0;}
 </string>
           </argument>
         </arguments>
