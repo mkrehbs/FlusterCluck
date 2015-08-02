@@ -26,34 +26,36 @@
           <argument>
             <kind>1</kind>
             <string>//colonel dialogue
-colonel[0] = "I say, what do we have here?";
-colonel[1] = "You ain't gonna just leave your pal, are ya, chicky?";
-colonel[2] = "Ya can't abandon family. Kin gotta stay together.";
-colonel[3] = "Now this might seem like unnecessary escalation but";
-colonel[4] = "take my MAGIC GUN.";
-colonel[5] = "LEFT CLICK to SHOOT...";
-colonel[6] = "RIGHT CLICK for the...";
-colonel[7] = "…oh, what do you call it... the SUBWEAPON.";
-colonel[8] = "It's like my daddy's famous seasoning:";
-colonel[9] = "a little bit of everything!";
-colonel[10] = "You never know what you're gonna get!";
-colonel[11] = "You can also DIVE with a SPACE-like motion";
-colonel[12] = "and pick up the PACE by SHIFTing your scrawny legs.";
-colonel[13] = "I guess I mean RUN.";
-colonel[14] = "Take care to avoid those mean ol' hound dogs.";
-colonel[15] = "Remember: this is a sneaking mission.";
-colonel[16] = "Now infiltrate the enemy coop and";
-colonel[17] = "teach that mean ol' farmer who's the real chicken.";
-colonel[18] = "...";
-colonel[19] = "Who am I?";
-colonel[20] = "…never ask that again.";
-colonel[21] = "Use my magic gun to save your friend!";
+colonel[0] = "Psst. ALT."
+colonel[1] = "Ahem. I say, what do we have here?";
+colonel[2] = "You ain't gonna just leave your pal, are ya, chicky?";
+colonel[3] = "Ya can't abandon family. Kin gotta stay together.";
+colonel[4] = "Now this might seem like unnecessary escalation but";
+colonel[5] = "take my MAGIC GUN.";
+colonel[6] = "LEFT CLICK to SHOOT...";
+colonel[7] = "RIGHT CLICK for the...";
+colonel[8] = "…oh, what do you call it... the SUBWEAPON.";
+colonel[9] = "It's like my daddy's famous seasoning:";
+colonel[10] = "a little bit of everything!";
+colonel[11] = "You never know what you're gonna get!";
+colonel[12] = "You can also DIVE with a SPACE-like motion";
+colonel[13] = "and pick up the PACE by SHIFTing your scrawny legs.";
+colonel[14] = "I guess I mean RUN.";
+colonel[15] = "Take care to avoid those mean ol' hound dogs.";
+colonel[16] = "Remember: this is a sneaking mission.";
+colonel[17] = "Now infiltrate the enemy coop and";
+colonel[18] = "teach that mean ol' farmer who's the real chicken.";
+colonel[19] = "...";
+colonel[20] = "Who am I?";
+colonel[21] = "…never ask that again.";
+colonel[22] = "Use my magic gun to save your friend!";
+colonel[23] = "(the gun is invisible!)";
 
-colonel[22] = "I can't believe you left.";
+colonel[24] = "I can't believe you left.";
 
-colonel[23] = "Magic gun!";
+colonel[25] = "Magic gun!";
 
-colonel[24] = "Murderer!";
+colonel[26] = "Murderer!";
 
 //friend
 friend[0] = "You came back! Is that a magic gun?";
@@ -217,7 +219,7 @@ if (line&lt;totalLines){
 
 if (character == 0)
 {
-    if (line&lt;21){
+    if (line&lt;23){
             line+=1;
             t=0;
         }
