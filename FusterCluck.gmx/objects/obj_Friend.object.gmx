@@ -134,6 +134,7 @@ if(follow){if(distance_to_point(obj_Player.x,y) &lt; 5){moving = false;}else{mov
           <argument>
             <kind>1</kind>
             <string>alarm[0] = 10;
+instance_create(2432,2560,obj_Hole);
 </string>
           </argument>
         </arguments>
