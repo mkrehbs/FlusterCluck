@@ -76,6 +76,9 @@ t = 0;
 padding = 8;
 totalLinesColonel=array_length_1d(colonel);
 totalLinesFriend=array_length_1d(friend);
+
+//dialogue switch
+character = 0;
 </string>
           </argument>
         </arguments>
@@ -144,11 +147,47 @@ if (line&lt;totalLines){
     draw_set_halign(fa_left);
     draw_set_valign(fa_middle);
     //draw_text(view_xview+100+padding, view_yview+120+padding, string_copy((dialogue[line]), 0, t));
+    
+    if (character = 0)
+    {
     draw_text(obj_Player.x-320+padding, obj_Player.y-180+(padding*2), string_copy((colonel[line]), 0, t));
     //draw_text(40, 420, string_copy(text[line], 0, t));
     if (t&lt;string_length(colonel[line]))
         t+=1;
     }
+    
+    
+    if (character = 1)
+    {
+    draw_text(obj_Player.x-320+padding, obj_Player.y-180+(padding*2), string_copy((friend[line]), 0, t));
+    //draw_text(40, 420, string_copy(text[line], 0, t));
+    if (t&lt;string_length(friend[line]))
+        t+=1;
+    }
+    }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="70">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw = false;
 </string>
           </argument>
         </arguments>
@@ -176,7 +215,9 @@ if (line&lt;totalLines){
 //show_debug_message(totallines);
 //show_debug_message(line);
 
-if (line&lt;21-1){
+if (character == 0)
+{
+    if (line&lt;21){
             line+=1;
             t=0;
         }
@@ -185,6 +226,41 @@ if (line&lt;21-1){
             free=true;
             //line = 0;
             }
+}
+if (character == 1)
+{
+    if (line&lt;3){
+            line+=1;
+            t=0;
+        }
+        else {
+            draw=false;
+            free=true;
+            //line = 0;
+            }
+}
+if (character == 2)
+{
+    /*if (line&lt;21-1){
+            line+=1;
+            t=0;
+        }
+        else {
+            draw=false;
+            free=true;
+            //line = 0;
+            }*/
+}
+
+/*if (line&lt;21-1){
+            line+=1;
+            t=0;
+        }
+        else {
+            draw=false;
+            free=true;
+            //line = 0;
+            }*/
 </string>
           </argument>
         </arguments>
