@@ -99,9 +99,8 @@ projdamage = 0;
 
 with(other){
 
-canmove = false;
 alarm[0] = 60;
-speed = 0;
+alert = 0;
 
 }
 </string>

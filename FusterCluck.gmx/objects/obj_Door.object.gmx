@@ -123,6 +123,8 @@ obj_Player.haskey = false;
 
 opened = true;
 
+with(obj_Enemy){alert = 2;}
+
 }
 
 

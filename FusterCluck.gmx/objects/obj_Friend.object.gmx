@@ -109,7 +109,7 @@ if (dir &gt; 225) &amp;&amp; (dir &lt;= 315)
 
 if(!moving){image_speed = 0;}else{image_speed = 0.35;}
 
-if(follow){if(distance_to_point(obj_Player.x,y) &lt; 33){moving = false;}else{moving = true; mp_potential_step(obj_Player.x,obj_Player.y,3,0);}}
+if(follow){if(distance_to_point(obj_Player.x,y) &lt; 5){moving = false;}else{moving = true; mp_potential_step(obj_Player.x,obj_Player.y,3,0);}}
 
 </string>
           </argument>
