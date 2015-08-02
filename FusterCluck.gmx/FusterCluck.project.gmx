@@ -129,6 +129,7 @@
     <background>background\tile_hay</background>
     <background>background\tile_lightwood</background>
     <background>background\tile_spiderweb</background>
+    <background>background\tile_reverse_web</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\Pth_square</path>
