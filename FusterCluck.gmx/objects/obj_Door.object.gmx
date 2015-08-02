@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>///Colton
-
 image_speed = 0;
+opened = false;
 </string>
           </argument>
         </arguments>
@@ -72,7 +72,8 @@ image_speed = 0;
           <argument>
             <kind>1</kind>
             <string>///Colton
-
+if(opened){image_speed = 0.1; solid = false;}
+if(!opened){image_speed = 0;}
 </string>
           </argument>
         </arguments>
@@ -120,9 +121,11 @@ image_speed = 0;
 
 obj_Player.haskey = false;
 
-image_speed=.05;
+opened = true;
 
 }
+
+
 
 </string>
           </argument>
@@ -146,10 +149,8 @@ image_speed=.05;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (image_index == 2) { //change 'jumping' to whatever your jumping sprite is
+            <string>/*if (image_index == 2) { //change 'jumping' to whatever your jumping sprite is
  //change the number to the number of the last frame of animation (i.e. if your animation has three frames, you'd set this number to 2
-image_speed = 0;
-mask_index-=1
 }
 </string>
           </argument>

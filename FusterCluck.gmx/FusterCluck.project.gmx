@@ -117,6 +117,7 @@
     <sprite>sprites\spr_Tombstone</sprite>
     <sprite>sprites\sprite87</sprite>
     <sprite>sprites\sprite88</sprite>
+    <sprite>sprites\sprite89</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tile_Grass</background>
