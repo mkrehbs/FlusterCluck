@@ -118,9 +118,8 @@
     <sprite>sprites\msk_Friend</sprite>
     <sprite>sprites\spr_Tombstone</sprite>
     <sprite>sprites\sprite87</sprite>
-    <sprite>sprites\spr_MainMenu</sprite>
     <sprite>sprites\spr_GameOver</sprite>
-    <sprite>sprites\spr_PressSpace</sprite>
+    <sprite>sprites\spr_MainMenu</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tile_Grass</background>
@@ -129,6 +128,8 @@
     <background>background\tile_hay</background>
     <background>background\tile_lightwood</background>
     <background>background\tile_spiderweb</background>
+    <background>background\background6</background>
+    <background>background\background7</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\Pth_square</path>
