@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_Music</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Projectiles">
       <sprite>sprites\spr_Anchor</sprite>
@@ -116,8 +118,9 @@
     <sprite>sprites\msk_Friend</sprite>
     <sprite>sprites\spr_Tombstone</sprite>
     <sprite>sprites\sprite87</sprite>
-    <sprite>sprites\sprite88</sprite>
-    <sprite>sprites\sprite89</sprite>
+    <sprite>sprites\spr_MainMenu</sprite>
+    <sprite>sprites\spr_GameOver</sprite>
+    <sprite>sprites\spr_PressSpace</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tile_Grass</background>
@@ -218,11 +221,11 @@
     <object>objects\obj_Tombstone</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Colton</room>
-    <room>rooms\rm_title</room>
-    <room>rooms\rm_gameover</room>
-    <room>rooms\rm_LevelOne</room>
     <room>rooms\rm_Init</room>
+    <room>rooms\Colton</room>
+    <room>rooms\rm_gameover</room>
+    <room>rooms\rm_title</room>
+    <room>rooms\rm_LevelOne</room>
     <room>rooms\level1</room>
   </rooms>
   <help>
