@@ -1041,6 +1041,40 @@
     <instance objName="obj_front_center_border_top" x="2464" y="1824" name="inst_EB8739A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Enemy" x="1425" y="2226" name="inst_819F6ABA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_PatrolPoint" x="1418" y="2346" name="inst_919BD570" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1632" y="1792" name="inst_748C6CC1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1632" y="1760" name="inst_73DFDCB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1632" y="1728" name="inst_9BA62BBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1632" y="1696" name="inst_59A9BC0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1632" y="1664" name="inst_E6721D52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1632" y="1632" name="inst_5E261A53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1632" y="1600" name="inst_DE48B783" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1632" y="1568" name="inst_B6C7A2BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1632" y="1536" name="inst_8EDA7499" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1632" y="1504" name="inst_05CEA373" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1632" y="1472" name="inst_E2B2EB0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LaserSensorx" x="1411" y="1650" name="inst_B477AE99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_USecurityCam" x="1647" y="1454" name="inst_CD05F43C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LSecurityCam" x="1632" y="1760" name="inst_84A59AAF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1504" y="1280" name="inst_1AC9ACE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1472" y="1280" name="inst_AC460352" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1440" y="1280" name="inst_BD2CCB9A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1440" y="1248" name="inst_319C9435" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1440" y="1216" name="inst_EF9F3DB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1440" y="1184" name="inst_E8029499" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1440" y="1152" name="inst_064B8FEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1600" y="1280" name="inst_2B9E2AC1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1632" y="1280" name="inst_A756AB08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1664" y="1280" name="inst_E679A668" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1664" y="1248" name="inst_6807ABE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1664" y="1216" name="inst_B44C3955" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1664" y="1184" name="inst_047BE515" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Cage" x="1664" y="1152" name="inst_C637DF5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_RSecurityCam" x="1472" y="1216" name="inst_FDA6081D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LSecurityCam" x="1664" y="1184" name="inst_A180B4A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Key" x="1571" y="1206" name="inst_03255D12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Enemy" x="2112" y="1216" name="inst_F47251F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_PatrolPoint" x="1920" y="1216" name="inst_B20B20B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_LaserSensorx" x="1412" y="1359" name="inst_B783C537" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tile_lightwood" x="1440" y="1984" w="32" h="32" xo="0" yo="0" id="10000005" name="inst_9CD32C6F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

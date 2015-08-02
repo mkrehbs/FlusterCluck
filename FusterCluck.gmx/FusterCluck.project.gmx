@@ -209,6 +209,7 @@
       <object>objects\obj_new_front_center_border_right</object>
       <object>objects\obj_front_center_border_top</object>
       <object>objects\object61</object>
+      <object>objects\obj_Cage</object>
     </objects>
     <object>objects\obj_Friend</object>
     <object>objects\obj_PatrolPoint</object>
