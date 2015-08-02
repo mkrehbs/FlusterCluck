@@ -115,6 +115,8 @@
     <sprite>sprites\spr_BrownChickenRight</sprite>
     <sprite>sprites\msk_Friend</sprite>
     <sprite>sprites\spr_Tombstone</sprite>
+    <sprite>sprites\sprite87</sprite>
+    <sprite>sprites\sprite88</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tile_Grass</background>

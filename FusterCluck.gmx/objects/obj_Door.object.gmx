@@ -73,10 +73,6 @@ image_speed = 0;
             <kind>1</kind>
             <string>///Colton
 
-if (image_index == 2)
-{
-    image_speed = 0;
-}
 </string>
           </argument>
         </arguments>
@@ -153,6 +149,7 @@ image_speed=.05;
             <string>if (image_index == 2) { //change 'jumping' to whatever your jumping sprite is
  //change the number to the number of the last frame of animation (i.e. if your animation has three frames, you'd set this number to 2
 image_speed = 0;
+mask_index-=1
 }
 </string>
           </argument>
