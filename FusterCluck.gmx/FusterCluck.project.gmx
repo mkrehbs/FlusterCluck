@@ -22,6 +22,7 @@
       <sprite>sprites\spr_depressedSensor</sprite>
       <sprites name="spr_Door">
         <sprite>sprites\spr_Door</sprite>
+        <sprite>sprites\spr_WideDoor</sprite>
       </sprites>
     </sprites>
     <sprites name="Player">
@@ -94,6 +95,11 @@
           <sprite>sprites\spr_fenceBottomRight</sprite>
         </sprites>
       </sprites>
+      <sprites name="Inside Coop">
+        <sprite>sprites\spr_Cage</sprite>
+        <sprite>sprites\spr_HayFloor</sprite>
+        <sprite>sprites\spr_Web</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\spr_grass2</sprite>
     <sprite>sprites\sprite35</sprite>
@@ -103,13 +109,12 @@
       <sprite>sprites\spr_FriendL</sprite>
       <sprite>sprites\spr_FriendR</sprite>
     </sprites>
-    <sprite>sprites\spr_HayFloor</sprite>
-    <sprite>sprites\sprite74</sprite>
     <sprite>sprites\spr_BrownChickenUp</sprite>
     <sprite>sprites\spr_BrownChickenDown</sprite>
     <sprite>sprites\spr_BrownChickenLeft</sprite>
     <sprite>sprites\spr_BrownChickenRight</sprite>
     <sprite>sprites\msk_Friend</sprite>
+    <sprite>sprites\spr_Tombstone</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\tile_Grass</background>
@@ -203,6 +208,7 @@
     <object>objects\obj_PatrolPoint</object>
     <object>objects\obj_MainMenu</object>
     <object>objects\obj_GameOver</object>
+    <object>objects\obj_Tombstone</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Colton</room>

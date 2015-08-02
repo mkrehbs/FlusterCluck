@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>///Colton
+dog_kill = 0;
+alert_raise = 0;
 
 randomize();
 ///Pre-Game Variables
