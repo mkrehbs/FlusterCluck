@@ -75,6 +75,7 @@ alarm[0] = 30;
 
 grid = mp_grid_create(0,0,room_width/32,room_height/32,32,32);
 mp_grid_add_instances(grid,obj_Barrier,1);
+hasgrid = true;
 </string>
           </argument>
         </arguments>
@@ -159,16 +160,16 @@ image_blend = choose(c_red,c_green,c_blue,c_purple,c_yellow);
           <argument>
             <kind>1</kind>
             <string>///Mem management
-/*
+if(hasgrid){
 instance_deactivate_all(1)
 instance_activate_object(obj_Player);
 instance_activate_object(obj_Text);
 instance_activate_object(obj_LaserSensorx);
 instance_activate_object(obj_LaserSensory);
 instance_activate_object(obj_Enemy);
-instance_activate_object(obj_PatrolPoint)
-instance_activate_region(view_xview[0],view_yview[0],view_wview[0],view_hview[0],1)
-
+instance_activate_object(obj_PatrolPoint);
+instance_activate_region(view_xview[0],view_yview[0],view_wview[0],view_hview[0],1);
+}
 
 
 </string>

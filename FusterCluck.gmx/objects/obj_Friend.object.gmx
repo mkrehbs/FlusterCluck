@@ -25,8 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>follow = false;
-moving = false;
+            <string>moving = false;
+path = path_add();
+
+
 </string>
           </argument>
         </arguments>
@@ -109,8 +111,6 @@ if (dir &gt; 225) &amp;&amp; (dir &lt;= 315)
 
 if(!moving){image_speed = 0;}else{image_speed = 0.35;}
 
-if(follow){if(distance_to_point(obj_Player.x,y) &lt; 5){moving = false;}else{moving = true; mp_potential_step(obj_Player.x,obj_Player.y,3,0);}}
-
 </string>
           </argument>
         </arguments>
@@ -134,11 +134,15 @@ if(follow){if(distance_to_point(obj_Player.x,y) &lt; 5){moving = false;}else{mov
           <argument>
             <kind>1</kind>
             <string>alarm[0] = 10;
-instance_create(2432,2560+10,obj_Hole);
+instance_create(2432,2560+50,obj_Hole);
 with(obj_Fencyfence){instance_destroy();}
 obj_Text.character = 1;
 obj_Text.draw = 1;
 obj_Text.line = 0;
+
+mp_grid_path(Control.grid,path,x,y,obj_Player.xstart,obj_Player.ystart,0);
+path_start(path,3,"",1);
+
 </string>
           </argument>
         </arguments>
