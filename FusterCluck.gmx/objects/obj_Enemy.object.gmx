@@ -41,6 +41,7 @@ var patrolpointx;
 var patrolpointy;
 
 cyclepatrol = false;
+cyclecount = 0;
 
 pointofinterestx = away1;
 pointofinteresty = away2;
@@ -162,19 +163,16 @@ if(distance_to_point(pointofinterestx,pointofinteresty) &lt; 1){update = true;}
 
 if(canmove){
 switch(alert){
-    case 1: moving = true; if(update){pointofinterestx = obj_Player.x; pointofinteresty = obj_Player.y; mp_grid_path(Control.grid,path,x,y,obj_Player.x,obj_Player.y,0); path_start(path,5,"",1);} break;
-    case 2: moving = true; if(update){cyclepatrol *= -1; pointofinterestx = patrolpointx; pointofinteresty = patrolpointy; mp_grid_path(Control.grid,path,x,y,pointofinterestx,pointofinteresty,0); path_start(path,3,"",1);} break;
+    case 1: moving = true; if(update){pointofinterestx = obj_Player.x; pointofinteresty = obj_Player.y; mp_grid_path(Control.grid,path,x,y,obj_Player.x,obj_Player.y,0); path_start(path,5,"",1); update = false;} break;
+    case 2: moving = true; if(update){cyclepatrol *= -1; if(pointofinterestx == away1 &amp;&amp; pointofinteresty == away2){pointofinterestx = home1; pointofinteresty = home2;}else{pointofinterestx = away1; pointofinteresty = away2;} mp_grid_path(Control.grid,path,x,y,pointofinterestx,pointofinteresty,0); path_start(path,3,"",1); update = false; cyclecount = 0; } break;
     //case 3: if(update){} break;
     default: break;
 
 
 }}
 
-if(moving){image_speed = 1}else{image_speed = 0;}
+if(moving){image_speed = 0.35}else{image_speed = 0;}
 
-
-update = false;
-moving = false;
 </string>
           </argument>
         </arguments>
