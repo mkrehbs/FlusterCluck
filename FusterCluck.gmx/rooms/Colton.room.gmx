@@ -1107,10 +1107,6 @@
     <instance objName="obj_Cage" x="1952" y="1152" name="inst_DEEA54BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Cage" x="1920" y="1152" name="inst_B1249F60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Cage" x="1888" y="1152" name="inst_9EB6A108" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Enemy" x="1696" y="1664" name="inst_927FDC0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Enemy" x="1760" y="1728" name="inst_C2472428" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Enemy" x="1696" y="1760" name="inst_E6F6D128" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Enemy" x="1760" y="1664" name="inst_98B73E95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Fencyfence" x="2432" y="2528" name="inst_7B3671B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Enemy" x="1504" y="2496" name="inst_8A62F392" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

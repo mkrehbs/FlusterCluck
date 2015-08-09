@@ -304,7 +304,7 @@ hp-=1;
           <argument>
             <kind>1</kind>
             <string>draw_self();
-if(path){draw_path(path,xstart,ystart,1);}
+//if(path){draw_path(path,xstart,ystart,1);}
 //if(grid){mp_grid_draw(grid);}
 if(pizzad == true){draw_sprite_ext(spr_Pizza,0,x,y-5,1,1,pizzadangle,c_white,1)}
 if(hurt == true){image_blend = c_red};else{image_blend = c_white;}
