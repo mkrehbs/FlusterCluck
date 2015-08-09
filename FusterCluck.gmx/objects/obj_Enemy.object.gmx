@@ -31,26 +31,33 @@ pizzad = false;
 pizzadangle = 0;
 hurt = false;
 
+
 away1 = instance_nearest(x,y,obj_PatrolPoint).x;
 away2 = instance_nearest(x,y,obj_PatrolPoint).y;
 home1 = xstart;
 home2 = ystart;
 
-awayhome = true;
+var patrolpointx;
+var patrolpointy;
+
+cyclepatrol = false;
+
+pointofinterestx = away1;
+pointofinteresty = away2;
 
 //ai edits
 
+update = true;
 
 wtf = 10;
 moving = false;
 
-cango = true;
 
 path = path_add();
-mp_grid_path(Control.grid,path,x,y,obj_Player.x,obj_Player.y,0);
-path_start(path,3,"",1);
+//mp_grid_path(Control.grid,path,x,y,obj_Player.x,obj_Player.y,0);
+//path_start(path,3,"",1);
 
-/*
+/* keep below for reference
 grid = mp_grid_create(0,0,room_width/32,room_height/32,32,32);
 path = path_add();
 mp_grid_add_instances(grid,obj_Barrier,1);
@@ -79,7 +86,7 @@ path_start(path,3,"",1);
             <kind>1</kind>
             <string>///Matt
 hp = 2;
-alert = -1//2;
+alert = 2;
 dir = 0;
 
 //image_angle = direction;
@@ -139,7 +146,6 @@ dir = 0;
             <string>///Colton
 if(hp&lt;1)
     {
-        
         instance_create(x, y, obj_Tombstone);
         instance_destroy();
         Control.dog_kill++;
@@ -148,14 +154,27 @@ if(hurt){hurt = false;}
 
 //show_debug_message(alert);
 
-if(awayhome &amp;&amp; alert == 2){pointofinterestx = away1; pointofinteresty = away2;}
-if(!awayhome &amp;&amp; alert == 2){pointofinterestx = home1; pointofinteresty = home2;}
+if(cyclepatrol = false){patrolpointx = away1; patrolpointy = away2;}else{patrolpointx = home1; patrolpointy = home2;}
 
-if(alert == 2 &amp;&amp; distance_to_point(pointofinterestx,pointofinteresty) == 0){
-awayhome*=-1;
-}
+if(collision_line(x,y,obj_Player.x,obj_Player.y,obj_Player,0,0) &gt; 0 &amp;&amp; distance_to_object(obj_Player) &lt; 100){alert = 1; update = true; Control.alert_raise++;}
 
-if(collision_line(x,y,obj_Player.x,obj_Player.y,obj_Player,0,0) &gt; 0 &amp;&amp; distance_to_object(obj_Player) &lt; 100){alert = 1; Control.alert_raise++;}
+if(distance_to_point(pointofinterestx,pointofinteresty) &lt; 1){update = true;}
+
+if(canmove){
+switch(alert){
+    case 1: moving = true; if(update){pointofinterestx = obj_Player.x; pointofinteresty = obj_Player.y; mp_grid_path(Control.grid,path,x,y,obj_Player.x,obj_Player.y,0); path_start(path,5,"",1);} break;
+    case 2: moving = true; if(update){cyclepatrol *= -1; pointofinterestx = patrolpointx; pointofinteresty = patrolpointy; mp_grid_path(Control.grid,path,x,y,pointofinterestx,pointofinteresty,0); path_start(path,3,"",1);} break;
+    //case 3: if(update){} break;
+    default: break;
+
+
+}}
+
+if(moving){image_speed = 1}else{image_speed = 0;}
+
+
+update = false;
+moving = false;
 </string>
           </argument>
         </arguments>
@@ -183,8 +202,6 @@ if(collision_line(x,y,obj_Player.x,obj_Player.y,obj_Player,0,0) &gt; 0 &amp;&amp
 dir = direction;
 
 if(moving){image_speed = 0.35}else{image_speed = 0;}
-
-//show_debug_message(pointofinterestx);show_debug_message(pointofinteresty);/////////
 
 //if (dir &gt; 315) &amp;&amp; (dir &lt;= 45)
 if ((315 &lt; dir &lt;= 0) &amp;&amp; (0 &lt; dir &lt;= 45))
@@ -218,38 +235,6 @@ if (dir &gt; 225) &amp;&amp; (dir &lt;= 315)
         sprite_index = spr_EnemyD;
     }
 }
-
-
-/*
-
-patrolx = xstart;
-patroly = ystart;
-
-//show_debug_message(patroly);
-
-mp_grid_add_instances(Grid, obj_Barrier, 1);
-mp_grid_path(Grid, Path, x, y, obj_Player.x, obj_Player.y, 1);
-mp_grid_path(Grid, Patrol, patrolx, patroly, x, patroly+20, 1);
-
-if (alert == 0) {
-    path_start(Patrol,5,0,1);
-    }
-
-if (alert == 1) {
-    path_start(Path,5,"",1);
-
-        } 
-        */
-        
-                             //if(alert == 0){moving = false; cango = true;}
-     /*run at the player*/   //if(alert == 1){alarm[1] = -1; moving = true; pointofinterestx = obj_Player.x; pointofinteresty = obj_Player.y; if(cango){path_start(path,3,"",1)}}
-     /*patrol*/              //if(alert == 2){moving = true; mp_potential_step(pointofinterestx,pointofinteresty,5,1);}
-     /*investigate*/         //if(alert == 3){alarm[1] = wtf; moving = true; mp_potential_step(pointofinterestx,pointofinteresty,5,0);if(point_distance(x,y,pointofinterestx,pointofinteresty) &lt; 30){alert = 0;}}
-                             
-        
-//} else{image_speed = 0;}
-
-
 </string>
           </argument>
         </arguments>
