@@ -160,6 +160,8 @@ image_blend = choose(c_red,c_green,c_blue,c_purple,c_yellow);
           <argument>
             <kind>1</kind>
             <string>///Mem management
+
+/*
 if(hasgrid){
 instance_deactivate_all(1)
 instance_activate_object(obj_Player);
