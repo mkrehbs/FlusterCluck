@@ -3,7 +3,7 @@
   <spriteName>spr_Hole</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-14</depth>
+  <depth>1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -146,7 +146,7 @@ obj_Player.image_yscale *=.95;
           <argument>
             <kind>1</kind>
             <string>transition = true;
-alarm[0] = 15;
+alarm[0] = 30;
 image_blend = c_black;
 with(obj_Barrier){{instance_destroy();}}
 obj_Player.depth = -15;

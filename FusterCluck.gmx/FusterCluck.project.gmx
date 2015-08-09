@@ -172,13 +172,14 @@
     <object>objects\obj_LOS_D</object>
     <object>objects\obj_LOS_R</object>
     <objects name="Projectiles">
-      <object>objects\obj_Projectile</object>
       <objects name="Shot">
         <object>objects\obj_Dart</object>
         <object>objects\obj_Pizza</object>
         <object>objects\obj_BowlingBall</object>
+        <object>objects\obj_Projectile</object>
       </objects>
       <objects name="Thrown">
+        <object>objects\obj_Thrown</object>
         <object>objects\obj_Anchor</object>
         <object>objects\obj_Slipper</object>
         <object>objects\obj_Brick</object>

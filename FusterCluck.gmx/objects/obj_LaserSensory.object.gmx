@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>line = true;
 alarm[0] = 60;
-maths = collision_line(x,y-1000,x,y,obj_Barrier,1,0);
-laserdist = point_distance(x,y,maths.x,maths.y);
+yy = y;
+while(!place_meeting(x,yy,obj_Barrier)){yy-=32;}
 </string>
           </argument>
         </arguments>
@@ -75,7 +75,7 @@ alarm[0] = 60;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(line){if(collision_line(x,y,x,y-laserdist,obj_Player,0,0)&gt;0){if(instance_exists(obj_Enemy)){obj_Enemy.alert = 1; Control.alert_raise++;}}}
+            <string>if(line){if(collision_line(x,y,x,yy,obj_Player,0,0)){if(instance_exists(obj_Enemy)){obj_Enemy.alert = 1; Control.alert_raise++;}}}
 </string>
           </argument>
         </arguments>
@@ -98,9 +98,10 @@ alarm[0] = 60;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(c_red);
+            <string>draw_self();
+draw_set_color(c_red);
 if(line){
-draw_line(x,y,x,y-laserdist);}
+draw_line(x,y,x,yy);}
 </string>
           </argument>
         </arguments>

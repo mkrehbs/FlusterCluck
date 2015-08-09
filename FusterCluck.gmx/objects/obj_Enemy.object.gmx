@@ -43,6 +43,12 @@ awayhome = true;
 
 wtf = 10;
 moving = false;
+
+path = path_add();
+cango = true;
+
+path = mp_grid_path(Control.grid,path,x,y,obj_Player.x,obj_Player.y,1);
+path_start(path,3,1,1);
 </string>
           </argument>
         </arguments>
@@ -65,7 +71,7 @@ moving = false;
             <kind>1</kind>
             <string>///Matt
 hp = 2;
-alert = 2;
+alert = -1//2;
 dir = 0;
 
 //image_angle = direction;
@@ -138,10 +144,10 @@ if(hp&lt;1)
     }
 if(hurt){hurt = false;}
 
-show_debug_message(alert);
+//show_debug_message(alert);
 
-if(awayhome){pointofinterestx = away1; pointofinteresty = away2;}
-if(!awayhome){pointofinterestx = home1; pointofinteresty = home2;}
+if(awayhome &amp;&amp; alert == 2){pointofinterestx = away1; pointofinteresty = away2;}
+if(!awayhome &amp;&amp; alert == 2){pointofinterestx = home1; pointofinteresty = home2;}
 
 if(alert == 2 &amp;&amp; distance_to_point(pointofinterestx,pointofinteresty) == 0){
 awayhome*=-1;
@@ -176,7 +182,7 @@ dir = direction;
 
 if(moving){image_speed = 0.35}else{image_speed = 0;}
 
-show_debug_message(pointofinterestx);show_debug_message(pointofinteresty);/////////
+//show_debug_message(pointofinterestx);show_debug_message(pointofinteresty);/////////
 
 //if (dir &gt; 315) &amp;&amp; (dir &lt;= 45)
 if ((315 &lt; dir &lt;= 0) &amp;&amp; (0 &lt; dir &lt;= 45))
@@ -233,8 +239,8 @@ if (alert == 1) {
         } 
         */
         
-                             if(alert == 0){moving = false;}
-     /*run at the player*/   if(alert == 1){alarm[1] = -1; moving = true; pointofinterestx = obj_Player.x; pointofinteresty = obj_Player.y; mp_potential_step(pointofinterestx,pointofinteresty,5,0);}
+                             if(alert == 0){moving = false; cango = true;}
+     /*run at the player*/   if(alert == 1){alarm[1] = -1; moving = true; pointofinterestx = obj_Player.x; pointofinteresty = obj_Player.y; if(cango){path_start(path,3,1,1)}}
      /*patrol*/              if(alert == 2){moving = true; mp_potential_step(pointofinterestx,pointofinteresty,5,1);}
      /*investigate*/         if(alert == 3){alarm[1] = wtf; moving = true; mp_potential_step(pointofinterestx,pointofinteresty,5,0);if(point_distance(x,y,pointofinterestx,pointofinteresty) &lt; 30){alert = 0;}}
                              
@@ -289,6 +295,7 @@ hp-=1;
           <argument>
             <kind>1</kind>
             <string>draw_self();
+if(path){draw_path(x,y,path,1);}
 if(pizzad == true){draw_sprite_ext(spr_Pizza,0,x,y-5,1,1,pizzadangle,c_white,1)}
 if(hurt == true){image_blend = c_red};else{image_blend = c_white;}
 </string>
