@@ -225,10 +225,10 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Init</room>
-    <room>rooms\rm_LevelOne</room>
+    <room>rooms\Colton</room>
     <room>rooms\rm_gameover</room>
     <room>rooms\rm_title</room>
-    <room>rooms\Colton</room>
+    <room>rooms\rm_LevelOne</room>
     <room>rooms\level1</room>
   </rooms>
   <help>
