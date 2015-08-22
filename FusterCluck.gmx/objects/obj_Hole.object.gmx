@@ -70,7 +70,7 @@ transition = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>game_restart();
+            <string>//game_restart();
 </string>
           </argument>
         </arguments>
@@ -101,6 +101,7 @@ obj_Player.image_angle+=30;
 obj_Player.image_alpha *=.95;
 obj_Player.image_xscale *=.95;
 obj_Player.image_yscale *=.95;
+if(obj_Player.image_alpha &lt; .01){game_restart();}
 }
 </string>
           </argument>
@@ -146,9 +147,9 @@ obj_Player.image_yscale *=.95;
           <argument>
             <kind>1</kind>
             <string>transition = true;
-alarm[0] = 30;
+//alarm[0] = 30;
 image_blend = c_black;
-with(obj_Barrier){{instance_destroy();}}
+with(all){depth = 2}
 obj_Player.depth = -15;
 </string>
           </argument>

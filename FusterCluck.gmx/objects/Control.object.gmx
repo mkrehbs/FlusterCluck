@@ -46,7 +46,7 @@ viewx2 = 0;
 viewy2 = 0;
 shake = 0;
 
-//audio_play_sound(snd_Music, 1, 1);
+audio_play_sound(snd_Music, 1, 1);//
 
 alarmed = false;
 gd = true;
