@@ -25,7 +25,9 @@
       <sprites name="spr_Door">
         <sprite>sprites\spr_Door</sprite>
         <sprite>sprites\spr_WideDoor</sprite>
+        <sprite>sprites\spr_TallDoor</sprite>
       </sprites>
+      <sprite>sprites\sprite91</sprite>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\spr_Player</sprite>
@@ -101,6 +103,8 @@
         <sprite>sprites\spr_Cage</sprite>
         <sprite>sprites\spr_HayFloor</sprite>
         <sprite>sprites\spr_Web</sprite>
+        <sprite>sprites\spr_HayCornerRight</sprite>
+        <sprite>sprites\spr_HayEdgeBottom</sprite>
       </sprites>
     </sprites>
     <sprite>sprites\spr_grass2</sprite>
@@ -128,8 +132,17 @@
     <background>background\tile_hay</background>
     <background>background\tile_lightwood</background>
     <background>background\tile_spiderweb</background>
+    <background>background\tile_reverse_web</background>
     <background>background\background6</background>
     <background>background\background7</background>
+    <background>background\tile_HayCornerRight</background>
+    <background>background\tile_HayCornerLeft</background>
+    <background>background\tile_HayCornerTopLeft</background>
+    <background>background\tile_HayCornerTopRight</background>
+    <background>background\tile_HayEdgeBottom</background>
+    <background>background\tile_HayEdgeLeft</background>
+    <background>background\tile_HayEdgeTop</background>
+    <background>background\tile_HayEdgeRight</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\Pth_square</path>
