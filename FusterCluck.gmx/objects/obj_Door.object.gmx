@@ -72,8 +72,8 @@ opened = false;
           <argument>
             <kind>1</kind>
             <string>///Colton
-if(opened){image_speed = 0.1; solid = false;}
-if(!opened){image_speed = 0;}
+if(opened == true &amp;&amp; image_index != 2){image_speed = 0.1; solid = false;}
+else{image_speed = 0;}
 </string>
           </argument>
         </arguments>
